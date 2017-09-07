@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PosUbles : MonoBehaviour {
 
-	int max = 100;
-	int min = 1;
-	int guess = 50;
+	private int max = 100;
+	private int min = 1;
+	private int guess;
+
+	public int counter;
+
 
 	// Use this for initialization
 	void Start () 
 	{
-
+		guess = Random.Range (min, max);
 		print ("Welcome to Number PosUbles");
 		print ("Pick a number in your head");
 
@@ -30,6 +33,7 @@ public class PosUbles : MonoBehaviour {
 		{
 			min = guess;
 			guess = (max + min) / 2;
+			counter--;
 			print ("Is the number higher or lower than " + guess);
 
 		}
@@ -37,12 +41,31 @@ public class PosUbles : MonoBehaviour {
 		{
 			max = guess;
 			guess = (max + min) / 2;
+			counter--;
 			print ("Is the number higher or lower than " + guess);
 
 		}
 		if (Input.GetKeyDown (KeyCode.Return)) 
 		{
-			print ("I am da bomb!");
+			print ("I win! No Tacos for you!");
+		}
+
+		if (counter == 0) 
+		{
+			counter--;
+			//print ("Free Tacos! You Win!");
+
+			if (Input.GetKeyDown (KeyCode.Return)) 
+			{
+				print ("I win");
+			}
+
+			if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow)) {
+				//counter--;
+				print ("You win!");
+			}
+
+
 		}
 	}
 }
