@@ -29,7 +29,16 @@ public class PosUbles : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown (KeyCode.UpArrow)) 
+		if (counter == -1) 
+		{
+		if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow)) 
+			{
+				//counter--;
+				print ("You win!");
+			}
+		}
+
+		else if (Input.GetKeyDown (KeyCode.UpArrow)) 
 		{
 			min = guess;
 			guess = (max + min) / 2;
@@ -37,7 +46,8 @@ public class PosUbles : MonoBehaviour {
 			print ("Is the number higher or lower than " + guess);
 
 		}
-		if (Input.GetKeyDown (KeyCode.DownArrow)) 
+
+		else if (Input.GetKeyDown (KeyCode.DownArrow)) 
 		{
 			max = guess;
 			guess = (max + min) / 2;
@@ -45,27 +55,16 @@ public class PosUbles : MonoBehaviour {
 			print ("Is the number higher or lower than " + guess);
 
 		}
+
 		if (Input.GetKeyDown (KeyCode.Return)) 
 		{
-			print ("I win! No Tacos for you!");
+			print ("I win!");
 		}
 
-		if (counter == 0) 
+		if (counter == 0)
 		{
 			counter--;
-			//print ("Free Tacos! You Win!");
-
-			if (Input.GetKeyDown (KeyCode.Return)) 
-			{
-				print ("I win");
-			}
-
-			if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow)) {
-				//counter--;
-				print ("You win!");
-			}
-
-
 		}
+					
 	}
 }
