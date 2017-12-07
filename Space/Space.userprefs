@@ -1,18 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Meteor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ScoreBoard.cs">
     <Files>
-      <File FileName="Assets/Scripts/Ship.cs" Line="58" Column="69" />
-      <File FileName="Assets/Scripts/PowerUp.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Ship.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PowerUp.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Meteor.cs" Line="40" Column="62" />
-      <File FileName="Assets/heart.cs" Line="10" Column="37" />
-      <File FileName="Assets/Scripts/Laser.cs" Line="27" Column="4" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="38" Column="4" />
+      <File FileName="Assets/Scripts/Meteor.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/ScoreBoard.cs" Line="19" Column="49" />
+      <File FileName="Assets/Scripts/heart.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Laser.cs" Line="26" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/krystalmarie/Desktop/UVU/McCully/DGM1600/Space/Assets/Scripts/Laser.cs" line="30" column="1" />
+      <Breakpoint file="/Users/krystalmarie/Desktop/UVU/McCully/DGM1600/Space/Assets/Scripts/Laser.cs" line="27" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

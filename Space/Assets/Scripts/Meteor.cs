@@ -10,6 +10,9 @@ public class Meteor : MonoBehaviour {
 	public Sprite []picture;
 	private int count = 0;
 	private LevelManager levelManager;
+	public Animator animator;
+	private GameObject scoreboard;
+	public ScoreBoard scoreScript;
 
 	// Use this for initialization
 	void Start () {
@@ -29,7 +32,7 @@ public class Meteor : MonoBehaviour {
 			count--;
 		}
 		//if health is  <0 destroy meteor
-		GetComponent<SpriteRenderer>().sprite = picture[count];
+		GetComponent<SpriteRenderer> ().sprite = picture [count];
 		//change the picture
 		if (health <= 0) {
 			LevelManager.meteorCount--;
@@ -37,10 +40,11 @@ public class Meteor : MonoBehaviour {
 			Destroy (this.gameObject);
 
 		}
-		//tyring to add a score board for how many meteors i detroy
-	//private void IncrementScore(){
-	//		scoreboard.tect += 10;
-	//}
-
 	}
+		//tyring to add a score board for how many meteors i destroy
+	private void IncrementScore(){
+		scoreboard.GetComponent<ScoreBoard> ().IncrementScoreboard (10);
+	}
+
 }
+

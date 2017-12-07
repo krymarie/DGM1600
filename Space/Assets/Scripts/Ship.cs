@@ -55,7 +55,7 @@ public class Ship : MonoBehaviour {
 
 		}
 		ShowHearts ();
-		//on collision destroy laser...???so it doesn't go thru the meteor
+
 	}
 
 	public int GetHealth(){

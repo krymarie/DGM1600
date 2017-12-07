@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+	[SerializeField]
 	public static int meteorCount;
 	public static int shipCount;//not sure if this will work
 	public LevelManager myLevelManager;//think this will helo
@@ -14,7 +15,7 @@ public class LevelManager : MonoBehaviour {
 		meteorCount = FindObjectsOfType<Meteor> ().Length;
 		//shipCount = FindObjectOfType<Ship> ().Length;//not sure
 		//print (shipCount);
-		//print (meteorCount);
+		print (meteorCount);
 
 	}
 
@@ -42,6 +43,7 @@ public class LevelManager : MonoBehaviour {
 		if (meteorCount <= 0) {
 			LoadNextLevel ();
 		}
+		print (meteorCount);
 	}
 }
 

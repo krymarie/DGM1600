@@ -6,6 +6,8 @@ public class Laser : MonoBehaviour {
 
 	public float lifetime;
 	public float speed;
+	private LevelManager levelManager;
+	public int health;
 
 	void Start () {
 	}
@@ -20,10 +22,16 @@ public class Laser : MonoBehaviour {
 		transform.Translate (Vector3.up * speed * Time.deltaTime);
 
 	}
-	//void OnCollisionEnter2D (Collision2D myCollider){
+	void OnCollisionEnter2D (Collision2D myCollider){
+
+
 		if (health <= 0) {
-			LevelManager.meteorCount--;
-			levelManager.CheckMeteorCount ();
+			//LevelManager.meteorCount--;
+			//levelManager.CheckMeteorCount ();
 			Destroy (this.gameObject);
+		}
+
+	}
 
 }
+
