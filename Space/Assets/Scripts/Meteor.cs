@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Meteor : MonoBehaviour {
 
@@ -36,6 +37,10 @@ public class Meteor : MonoBehaviour {
 			Destroy (this.gameObject);
 
 		}
+		//tyring to add a score board for how many meteors i detroy
+	//private void IncrementScore(){
+	//		scoreboard.tect += 10;
+	//}
 
 	}
 }

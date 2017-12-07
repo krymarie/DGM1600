@@ -9,11 +9,28 @@ public class Ship : MonoBehaviour {
 	public Sprite []picture;
 	private int count = 0;
 	private LevelManager levelManager;
+	public GameObject[] hearts;
+
 
 	// Use this for initialization
 	void Start () {
+		ShowHearts ();
 		GetComponent<Rigidbody2D> ().AddTorque(Random.Range(startingSpin,-startingSpin),ForceMode2D.Impulse);
 		levelManager = GameObject.FindObjectOfType<LevelManager> ();
+
+
+	}
+
+	private void ShowHearts(){	
+	//Turn hearts off
+		for (int i = 0; i < hearts.Length; i++) {
+		hearts[i].SetActive (false);
+		}
+
+		//Turn hearts on
+		for (int i = 0; i < health; i++) {
+			hearts[i].SetActive (true);
+		}
 
 
 	}
@@ -26,6 +43,7 @@ public class Ship : MonoBehaviour {
 
 		if (count > picture.Length - 1) {
 			count--;
+		//switch statement set the image basde on health level
 		}
 		//if health is  <0 destroy meteor
 		GetComponent<SpriteRenderer>().sprite = picture[count];
@@ -36,6 +54,17 @@ public class Ship : MonoBehaviour {
 			Destroy (this.gameObject);
 
 		}
-
+		ShowHearts ();
+		//on collision destroy laser...???so it doesn't go thru the meteor
 	}
+
+	public int GetHealth(){
+		//awesome code of some sort
+
+		return health;
+	}
+
+
+
+
 }

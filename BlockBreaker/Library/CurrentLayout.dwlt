@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 806
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 342}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 788
+  controlID: 21
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 789
+  controlID: 22
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,10 +296,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -97.66667
-    m_HBaseRangeMax: 97.66667
-    m_VBaseRangeMin: -73.25
-    m_VBaseRangeMax: 73.25
+    m_HBaseRangeMin: -195.33334
+    m_HBaseRangeMax: 195.33334
+    m_VBaseRangeMin: -146.5
+    m_VBaseRangeMax: 146.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -318,7 +318,7 @@ MonoBehaviour:
       y: 17
       width: 602
       height: 293
-    m_Scale: {x: 2, y: 2}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 301, y: 146.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -326,15 +326,15 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -150.5
-      y: -73.25
-      width: 301
-      height: 146.5
+      x: -301
+      y: -146.5
+      width: 602
+      height: 293
     m_MinimalGUI: 1
-  m_defaultScale: 2
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1204, y: 620}
+  m_LastWindowPixelSize: {x: 602, y: 310}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -365,14 +365,14 @@ MonoBehaviour:
     width: 602
     height: 310
   m_SceneLighting: 1
-  lastFramingTime: 1663.1486449837685
+  lastFramingTime: 54.248944997787476
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -10}
+    m_Target: {x: -0.17, y: -5.23, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: -10}
+    m_Value: {x: -0.17, y: -5.23, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -399,9 +399,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22
+    m_Target: 5.404899
     speed: 2
-    m_Value: 22
+    m_Value: 5.404899
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -466,9 +466,9 @@ MonoBehaviour:
     height: 735
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4e260000
+    m_SelectedIDs: 18260000
     m_LastClickedID: 0
-    m_ExpandedIDs: dce7ffff1afcffff0000000070260000
+    m_ExpandedIDs: 6cf8ffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,7 +487,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Menu
+  - Level01
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -529,7 +529,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/_Scenes
+    - Assets/PreFab
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders:
@@ -572,18 +572,18 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000fc250000042600000a26000022260000322600004c260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Level01
+      m_OriginalName: Level01
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 9802
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 

@@ -207,7 +207,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5d1469bbbe7e049178040fb5db11762b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c036dc2c740f6487891e4cdeede960f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.09
   m_Pitch: 1
@@ -217,8 +217,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 5.622362
+  MaxDistance: 238.26729
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 1
@@ -285,7 +285,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379830371}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 204, y: 153, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -351,7 +351,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 161.39767
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -374,8 +374,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 466012301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 204, y: 153, z: -10}
+  m_LocalScale: {x: 1.7249999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -413,7 +413,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.41500002}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 14.5, y: 24.5}
-  m_SizeDelta: {x: -102.7, y: -147.20001}
+  m_SizeDelta: {x: -354.2, y: -231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489643311
 MonoBehaviour:
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.82745105, g: 0.882353, b: 0.9058824, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -510,9 +510,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.5591849, b: 0, a: 1}
-    m_PressedColor: {r: 1, g: 0.697, b: 0, a: 1}
+    m_NormalColor: {r: 0.82745105, g: 0.882353, b: 0.9058824, a: 1}
+    m_HighlightedColor: {r: 0.67058825, g: 0.23137257, b: 0.23137257, a: 1}
+    m_PressedColor: {r: 1, g: 0.8000001, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433368035}
+      - m_Target: {fileID: 1433368034}
         m_MethodName: LevelLoad
         m_Mode: 5
         m_Arguments:
@@ -826,7 +826,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1433368033}
-  - component: {fileID: 1433368035}
+  - component: {fileID: 1433368034}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -847,7 +847,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1433368035
+--- !u!114 &1433368034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -954,8 +954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015259, y: -139}
-  m_SizeDelta: {x: -460, y: -480.9}
+  m_AnchoredPosition: {x: 0.000014311328, y: -139}
+  m_SizeDelta: {x: -599.7, y: -499.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723408864
 MonoBehaviour:
@@ -977,8 +977,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.491, b: 0, a: 1}
-    m_PressedColor: {r: 1, g: 0.716, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6745098, g: 0.22352943, b: 0.22352943, a: 1}
+    m_PressedColor: {r: 1, g: 0.8000001, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433368035}
+      - m_Target: {fileID: 1433368034}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.99994594, b: 0.99994594, a: 1}
+  m_Color: {r: 0.82745105, g: 0.882353, b: 0.9058824, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1112,13 +1112,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972534882}
-  m_LocalRotation: {x: -0.104175106, y: 0.08871437, z: -0.35679084, w: 0.92410916}
-  m_LocalPosition: {x: -223.45227, y: -138.48943, z: 0}
-  m_LocalScale: {x: 295.85016, y: 290.65314, z: 2.9464004}
+  m_LocalRotation: {x: -0.053636156, y: -0.037516814, z: -0.37019026, w: 0.9266471}
+  m_LocalPosition: {x: -251.2, y: -156.4, z: 2}
+  m_LocalScale: {x: 249.48828, y: 261.4142, z: 2.9464004}
   m_Children: []
   m_Father: {fileID: 1314522307}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -7.425, y: 13.905001, z: -43.129}
+  m_LocalEulerAnglesHint: {x: -7.307, y: -1.723, z: -43.443}
 --- !u!1 &2009169516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,10 +1183,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009169516}
-  m_LocalRotation: {x: 0.28593478, y: -0.2762108, z: -0.8889011, w: 0.2276044}
-  m_LocalPosition: {x: -305.0166, y: 209.85822, z: 0}
+  m_LocalRotation: {x: 0.054564502, y: -0.057893973, z: -0.9524651, w: 0.29407692}
+  m_LocalPosition: {x: -305.0166, y: 209.85822, z: 3}
   m_LocalScale: {x: 135.5123, y: 135.51233, z: 135.51225}
   m_Children: []
   m_Father: {fileID: 1314522307}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -21.155, y: -42.835003, z: -142.897}
+  m_LocalEulerAnglesHint: {x: -4.485, y: -7.9560003, z: -145.371}

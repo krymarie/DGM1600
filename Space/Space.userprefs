@@ -1,6 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Meteor.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Ship.cs" Line="58" Column="69" />
+      <File FileName="Assets/Scripts/PowerUp.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Meteor.cs" Line="40" Column="62" />
+      <File FileName="Assets/heart.cs" Line="10" Column="37" />
+      <File FileName="Assets/Scripts/Laser.cs" Line="27" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
