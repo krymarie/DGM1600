@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+//adding above code allows me to animate code in UI
 
 public class PosUbles : MonoBehaviour {
+
+	public Text textBox;
 
 	private int max = 100;
 	private int min = 1;
@@ -15,6 +19,18 @@ public class PosUbles : MonoBehaviour {
 	void Start () 
 	{
 		guess = Random.Range (min, max);
+
+
+		textBox.text = "Welcome to The Taco"
+		+ "\nGuessing Game!"
+		+ "\n\nPick a number of tacos in your head"
+		+ "\n\nThe highest number you can pick is " + max
+		+ "\nThe lowest number you can pick is " + min
+		+ "\n\nIs the number of tacos you guessed higher or lower than " + guess
+		+"\n\nUp arrow for higher, Down for lower, enter for equal";
+
+
+
 		print ("Welcome to Number PosUbles");
 		print ("Pick a number in your head");
 
@@ -29,43 +45,54 @@ public class PosUbles : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown (KeyCode.UpArrow)) 
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Application.Quit ();
+
+		if (counter == -1) 
+		{
+		if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow)) 
+			{
+				//counter--; moved below
+				print ("You Win 5 Free Tacos!");
+				textBox.text = "\nYou Win 5 Free Tacos!";
+			}
+		}
+
+		else if (Input.GetKeyDown (KeyCode.UpArrow)) 
 		{
 			min = guess;
 			guess = (max + min) / 2;
 			counter--;
 			print ("Is the number higher or lower than " + guess);
+			textBox.text = "Is the number higher or lower than " + guess;
 
 		}
-		if (Input.GetKeyDown (KeyCode.DownArrow)) 
+			
+
+		else if (Input.GetKeyDown (KeyCode.DownArrow)) 
 		{
 			max = guess;
 			guess = (max + min) / 2;
 			counter--;
 			print ("Is the number higher or lower than " + guess);
+			textBox.text = "Is the number higher or lower than " + guess;
 
 		}
+
+
+
 		if (Input.GetKeyDown (KeyCode.Return)) 
 		{
-			print ("I win! No Tacos for you!");
+			print ("You Lose It's Nacho Day!");
+			textBox.text = "\nYou Lose It's Nacho Day!";
 		}
 
-		if (counter == 0) 
+
+
+		if (counter == 0)
 		{
 			counter--;
-			//print ("Free Tacos! You Win!");
-
-			if (Input.GetKeyDown (KeyCode.Return)) 
-			{
-				print ("I win");
-			}
-
-			if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.DownArrow)) {
-				//counter--;
-				print ("You win!");
-			}
-
-
 		}
+					
 	}
 }
