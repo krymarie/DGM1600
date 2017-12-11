@@ -18,8 +18,6 @@ public class Meteor : MonoBehaviour {
 	void Start () {
 		GetComponent<Rigidbody2D> ().AddTorque(Random.Range(startingSpin,-startingSpin),ForceMode2D.Impulse);
 		levelManager = GameObject.FindObjectOfType<LevelManager> ();
-
-		
 	}
 
 	void OnCollisionEnter2D (Collision2D myCollider) {
@@ -38,7 +36,6 @@ public class Meteor : MonoBehaviour {
 			LevelManager.meteorCount--;
 			levelManager.CheckMeteorCount ();
 			Destroy (this.gameObject);
-
 		}
 	}
 		//tyring to add a score board for how many meteors i destroy

@@ -24,11 +24,10 @@ public class PlayerController : MonoBehaviour {
 		Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		//so paddle is in front of camera or else it will dissapear (override z depth position
 		mousePos.z = 0;
-		//apply setting and mods to paddle
+		//apply setting and mods to ship
 		playerTrans.position = mousePos;
 
-		if(Input.GetButtonUp("Fire1"))
-		{
+		if(Input.GetButtonUp("Fire1")) {
 			GameObject shot = Instantiate(projectile, shotPos.position, shotPos.rotation) as GameObject;
 			shot.GetComponent<Rigidbody2D>().AddForce(shotPos.up * shotForce);
 		}
