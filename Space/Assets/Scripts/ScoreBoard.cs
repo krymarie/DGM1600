@@ -10,7 +10,7 @@ public class ScoreBoard : MonoBehaviour {
 	public Text highscoreDisplay;
 	public Text prevScoreDisplay;
 
-	// Use this for initialization
+	// Score board code that i choose not to you. This game is about reaching the top level. 
 	void Start () {
 		score = 0;
 		if (display != null) {

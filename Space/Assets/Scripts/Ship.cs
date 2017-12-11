@@ -12,7 +12,7 @@ public class Ship : MonoBehaviour {
 	public GameObject[] hearts;
 
 
-	// Use this for initialization
+
 	void Start () {
 		ShowHearts ();
 		GetComponent<Rigidbody2D> ().AddTorque(Random.Range(startingSpin,-startingSpin),ForceMode2D.Impulse);
@@ -40,14 +40,13 @@ public class Ship : MonoBehaviour {
 		//Take away 1 health for that object only
 		health--;
 		count++;
-
+		//switch statement set the image basde on health level
 		if (count > picture.Length - 1) {
 			count--;
-		//switch statement set the image basde on health level
 		}
-		//if health is  <0 destroy meteor
+
 		GetComponent<SpriteRenderer>().sprite = picture[count];
-		//change the picture
+		//destroy ship when health is gone
 		if (health <= 0) {
 			LevelManager.shipCount--;
 			levelManager.CheckShipCount ();
