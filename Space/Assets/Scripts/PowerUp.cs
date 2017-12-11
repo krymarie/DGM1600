@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUp : MonoBehaviour {
-
+	//aray practice
 	public enum Type {fancyDancy, myAwesomeness, laserButt};
 	public Type powerupType;
 	public Sprite[] images;
+
 
 	// Use this for initialization
 	void Start () {
@@ -29,17 +30,14 @@ public class PowerUp : MonoBehaviour {
 	void Update () {
 		
 	}
-	//when colliding with powerup destoy object and add 2 to ship health/hearts
+	//when colliding with powerup destoy object and print debug 
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log ("You hit something green!");
 		if (powerupType == Type.myAwesomeness) {
-			//Ship.health ++;
-
 		}
 
 		switch (powerupType) {
 		case Type.myAwesomeness:
-		//	other.GetComponent<PlayerController> ().thrusterForce *= 2;
 			break;
 		default:
 			break;
