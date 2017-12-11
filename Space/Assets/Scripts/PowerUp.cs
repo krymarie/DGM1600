@@ -29,11 +29,11 @@ public class PowerUp : MonoBehaviour {
 	void Update () {
 		
 	}
-
+	//when colliding with powerup destoy object and add 2 to ship health/hearts
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log ("You hit something green!");
-
 		if (powerupType == Type.myAwesomeness) {
+			//Ship.health ++;
 
 		}
 
