@@ -3760,7 +3760,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f23ac82aea0aa4d19be9881d83a38eac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 96174a8f38569408d8fceb8fd44b9561, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.12
   m_Pitch: 1
@@ -4207,7 +4207,7 @@ Prefab:
     - target: {fileID: 224650560503342686, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224744646420590988, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
@@ -4227,7 +4227,7 @@ Prefab:
     - target: {fileID: 224744646420590988, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224525578568578720, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
@@ -4247,7 +4247,7 @@ Prefab:
     - target: {fileID: 224525578568578720, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224185560658129764, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
@@ -4267,7 +4267,7 @@ Prefab:
     - target: {fileID: 224185560658129764, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224781701461389946, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
@@ -4287,7 +4287,7 @@ Prefab:
     - target: {fileID: 224781701461389946, guid: 9a266276beb6b431fa8e6d6c115bed84,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.16
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a266276beb6b431fa8e6d6c115bed84, type: 2}
