@@ -15,7 +15,7 @@ public class LevelManager : MonoBehaviour {
 		meteorCount = FindObjectsOfType<Meteor> ().Length;
 		//shipCount = FindObjectOfType<Ship> ().Length;//not sure
 		//print (shipCount);
-		print (meteorCount);
+		//print (meteorCount);
 
 	}
 
@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour {
 		if (meteorCount <= 0) {
 			LoadNextLevel ();
 		}
-		print (meteorCount);
+		//print (meteorCount);
 	}
 }
 
